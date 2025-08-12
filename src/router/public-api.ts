@@ -5,3 +5,4 @@ export const publicRouter = express.Router();
 
 // Belum login
 publicRouter.post("/api/users", UserController.register);
+publicRouter.post("/api/users/login", UserController.login);
