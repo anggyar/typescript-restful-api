@@ -9,7 +9,7 @@
         // Environment Settings
         // See also https://aka.ms/tsconfig/module
         "module": "commonjs",
-        // "target": "esnext",
+        "target": "es2016",
         "moduleResolution": "node",
         // "types": [],
         // For nodejs:
@@ -35,12 +35,13 @@
         // "noPropertyAccessFromIndexSignature": true,
 
         // Recommended Options
+        "esModuleInterop": true,
         "strict": true,
         "jsx": "react-jsx",
-        "verbatimModuleSyntax": true,
-        "isolatedModules": true,
-        "noUncheckedSideEffectImports": true,
-        "moduleDetection": "force",
+        // "verbatimModuleSyntax": true,
+        // "isolatedModules": true,
+        // "noUncheckedSideEffectImports": true,
+        // "moduleDetection": "force",
         "skipLibCheck": true
     }
 }
