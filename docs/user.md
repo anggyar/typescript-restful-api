@@ -1,5 +1,7 @@
 # User Api Spec
 
+<!-- !REGISTER -->
+
 ## Register User
 
 Endpont: POST /api/users
@@ -32,6 +34,8 @@ Response Body (Failed) :
     "errors": "username must not blank"
 }
 ```
+
+<!-- !LOGIN -->
 
 ## Login User
 
@@ -66,6 +70,8 @@ Response Body (Failed) :
 }
 ```
 
+<!-- !GET -->
+
 ## Get User
 
 Endpont: GET /api/users/current
@@ -91,6 +97,8 @@ Response Body (Failed) :
     "errors": "Unauthorized"
 }
 ```
+
+<!-- !UPDATE -->
 
 ## Update User
 
@@ -127,6 +135,8 @@ Response Body (Failed) :
     "errors": "Unauthorized"
 }
 ```
+
+<!-- !LOGOUT -->
 
 ## Logout User
 

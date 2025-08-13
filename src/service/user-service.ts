@@ -1,3 +1,4 @@
+import { User } from "@prisma/client";
 import { prismaClient } from "../application/database";
 import { ResponseError } from "../error/response-error";
 import {
@@ -42,6 +43,7 @@ export class UserService {
         return toUserResponse(user);
     }
 
+    // !LOGIN SKENARIO
     static async login(request: LoginUserRequest): Promise<UserResponse> {
         const loginRequest = Validation.validate(
             UserValidation.LOGIN,
@@ -76,7 +78,12 @@ export class UserService {
         });
 
         const response = toUserResponse(user);
-        response.token = user.token!;
+        response.token = user.token!; // pakai tanda ! karena sudah pasti tahu tokennya ada.
         return response;
+    }
+
+    // !GET SKENARIO
+    static async get(user: User): Promise<UserResponse> {
+        return toUserResponse(user);
     }
 }
