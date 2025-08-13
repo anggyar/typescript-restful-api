@@ -8,3 +8,4 @@ apiRuouter.use(authMiddleware);
 //? USER API
 apiRuouter.get("/api/users/current", UserController.get);
 apiRuouter.patch("/api/users/current", UserController.update);
+apiRuouter.delete("/api/users/current", UserController.logout);
