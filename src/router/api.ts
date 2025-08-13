@@ -7,3 +7,4 @@ apiRuouter.use(authMiddleware);
 
 //? USER API
 apiRuouter.get("/api/users/current", UserController.get);
+apiRuouter.patch("/api/users/current", UserController.update);
