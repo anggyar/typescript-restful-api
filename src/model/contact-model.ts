@@ -24,6 +24,7 @@ export type GetContactRequest = {
 };
 
 export type UpdateContactRequest = {
+    id: number;
     first_name: string;
     last_name?: string;
     email?: string;
