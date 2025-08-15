@@ -15,3 +15,5 @@ apiRuouter.delete("/api/users/current", UserController.logout);
 apiRuouter.post("/api/contacts", ContactController.create);
 apiRuouter.get("/api/contacts/:contactId", ContactController.get);
 apiRuouter.put("/api/contacts/:contactId", ContactController.update);
+apiRuouter.delete("/api/contacts/:contactId", ContactController.remove);
+apiRuouter.get("/api/contacts", ContactController.search);
