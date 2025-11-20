@@ -21,3 +21,7 @@ apiRuouter.get("/api/contacts", ContactController.search);
 
 // ? ADDRESS API
 apiRuouter.post("/api/contacts/:contactId/addresses", AddressController.create);
+apiRuouter.get(
+  "/api/contacts/:contactId/addresses/:addressId",
+  AddressController.get
+);

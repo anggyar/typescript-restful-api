@@ -10,9 +10,9 @@ Request Body :
 
 ```json
 {
-    "username": "anggyar",
-    "password": "rahasia",
-    "name": "Anggyar Muhamad Yahya"
+  "username": "anggyar",
+  "password": "rahasia",
+  "name": "Anggyar Muhamad Yahya"
 }
 ```
 
@@ -20,10 +20,10 @@ Response Body (Success):
 
 ```json
 {
-    "data": {
-        "username": "anggyar",
-        "name": "Anggyar Muhamad Yahya"
-    }
+  "data": {
+    "username": "anggyar",
+    "name": "Anggyar Muhamad Yahya"
+  }
 }
 ```
 
@@ -31,7 +31,7 @@ Response Body (Failed) :
 
 ```json
 {
-    "errors": "username must not blank"
+  "errors": "username must not blank"
 }
 ```
 
@@ -45,8 +45,8 @@ Request Body :
 
 ```json
 {
-    "username": "anggyar",
-    "password": "rahasia"
+  "username": "anggyar",
+  "password": "rahasia"
 }
 ```
 
@@ -54,11 +54,11 @@ Response Body (Success):
 
 ```json
 {
-    "data": {
-        "username": "anggyar",
-        "name": "Anggyar Muhamad Yahya",
-        "token": "uuid"
-    }
+  "data": {
+    "username": "anggyar",
+    "name": "Anggyar Muhamad Yahya",
+    "token": "uuid"
+  }
 }
 ```
 
@@ -66,7 +66,7 @@ Response Body (Failed) :
 
 ```json
 {
-    "errors": "Username or password is wrong"
+  "errors": "Username or password is wrong"
 }
 ```
 
@@ -77,16 +77,16 @@ Response Body (Failed) :
 Endpont: GET /api/users/current
 Request Header:
 
--   X-API-TOKEN: token
+- X-API-TOKEN: token
 
 Response Body (Success):
 
 ```json
 {
-    "data": {
-        "username": "anggyar",
-        "name": "Anggyar Muhamad Yahya"
-    }
+  "data": {
+    "username": "anggyar",
+    "name": "Anggyar Muhamad Yahya"
+  }
 }
 ```
 
@@ -94,7 +94,7 @@ Response Body (Failed) :
 
 ```json
 {
-    "errors": "Unauthorized"
+  "errors": "Unauthorized"
 }
 ```
 
@@ -106,14 +106,14 @@ Endpont: PATCH /api/users/current
 
 Request Header:
 
--   X-API-TOKEN: TOKEN
+- X-API-TOKEN: TOKEN
 
 Request Body:
 
 ```json
 {
-    "name": "Anggyar Lagi",
-    "password": "rahasia baru"
+  "name": "Anggyar Lagi",
+  "password": "rahasia baru"
 }
 ```
 
@@ -121,10 +121,10 @@ Response Body (Success):
 
 ```json
 {
-    "data": {
-        "username": "anggyar",
-        "name": "Anggyar Muhamad Yahya"
-    }
+  "data": {
+    "username": "anggyar",
+    "name": "Anggyar Lagi"
+  }
 }
 ```
 
@@ -132,7 +132,7 @@ Response Body (Failed) :
 
 ```json
 {
-    "errors": "Unauthorized"
+  "errors": "Unauthorized"
 }
 ```
 
@@ -144,13 +144,13 @@ Endpont: DELETE /api/users/current
 
 Request Header:
 
--   X-API-TOKEN: TOKEN
+- X-API-TOKEN: TOKEN
 
 Request Body:
 
 ```json
 {
-    "data": "OK"
+  "data": "OK"
 }
 ```
 
@@ -158,10 +158,10 @@ Response Body (Success):
 
 ```json
 {
-    "data": {
-        "username": "anggyar",
-        "name": "Anggyar Muhamad Yahya"
-    }
+  "data": {
+    "username": "anggyar",
+    "name": "Anggyar Muhamad Yahya"
+  }
 }
 ```
 
@@ -169,6 +169,6 @@ Response Body (Failed) :
 
 ```json
 {
-    "errors": "Unauthorized"
+  "errors": "Unauthorized"
 }
 ```
